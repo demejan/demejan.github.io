@@ -1,113 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>My First Page</title>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Go on a Date!</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Здесь будет заголовок</h2>
-<p><a href="#top">ссылка</a></p>
-<p>Место для текста<br>
-a<br>
-a<br>
-a<br>
+  <div class="container">
+    <h1>I'm grateful for you, let's go on a date!</h1>
+    <button id="startButton">Yes! Let's Go!</button>
 
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
+    <div id="questions" class="hidden">
+      <h2>Where would you like to go?</h2>
+      <input type="text" id="location" placeholder="e.g., park, movie theater">
 
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
+      <h2>What would you like to eat?</h2>
+      <input type="text" id="food" placeholder="e.g., pizza, sushi">
 
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-<iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.kz/iframe/#album/24995380">Слушайте <a href='https://music.yandex.kz/album/24995380'>Король и Шут</a> на Яндекс Музыке</iframe>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-a<br>
-</p>
+      <h2>What's your ideal activity?</h2>
+      <input type="text" id="activity" placeholder="e.g., walk, talk, watch a movie">
 
-<p><a name="top">перейти сюда</a></p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2M2UuZdCCdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br>
-<br>
-<br>
-<br>
-<button type="button" onclick="MyButton()">Click me</button>
+      <h2>What time do you prefer?</h2>
+      <input type="text" id="time" placeholder="e.g., morning, evening">
 
-    
+      <button id="submitButton">Submit</button>
+    </div>
+
+    <div id="thankYou" class="hidden">
+      <h2>Thank you for your answers!</h2>
+      <p>Your choices:</p>
+      <ul id="summary"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
