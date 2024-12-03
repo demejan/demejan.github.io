@@ -7,24 +7,58 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="heart-background"></div> <!-- Animated hearts -->
+  
   <div class="container">
     <h1>I'm grateful for you, let's go on a date!</h1>
     <button id="startButton">Yes! Let's Go!</button>
 
     <div id="questions" class="hidden">
-      <h2>Where would you like to go?</h2>
-      <input type="text" id="location" placeholder="e.g., park, movie theater">
+      <div id="question1" class="question-box hidden">
+        <h2>Where would you like to go?</h2>
+        <label><input type="radio" name="location" value="Park"> Park</label>
+        <label><input type="radio" name="location" value="Movie Theater"> Movie Theater</label>
+        <label><input type="radio" name="location" value="Restaurant"> Restaurant</label>
+        <label><input type="radio" name="location" value="Beach"> Beach</label>
+        <label><input type="radio" name="location" value="Cafe"> Cafe</label>
+        <label><input type="radio" name="location" value="Museum"> Museum</label>
+        <label><input type="radio" name="location" value="Amusement Park"> Amusement Park</label>
+        <label><input type="radio" name="location" value="Zoo"> Zoo</label>
+        <label><input type="radio" name="location" value="Art Gallery"> Art Gallery</label>
+        <button class="next-btn">Next</button>
+      </div>
 
-      <h2>What would you like to eat?</h2>
-      <input type="text" id="food" placeholder="e.g., pizza, sushi">
+      <div id="question2" class="question-box hidden">
+        <h2>What would you like to eat?</h2>
+        <label><input type="radio" name="food" value="Pizza"> Pizza</label>
+        <label><input type="radio" name="food" value="Sushi"> Sushi</label>
+        <label><input type="radio" name="food" value="Ice Cream"> Ice Cream</label>
+        <label><input type="radio" name="food" value="Burger"> Burger</label>
+        <label><input type="radio" name="food" value="Pasta"> Pasta</label>
+        <label><input type="radio" name="food" value="Salad"> Salad</label>
+        <label><input type="radio" name="food" value="Tacos"> Tacos</label>
+        <button class="next-btn">Next</button>
+      </div>
 
-      <h2>What's your ideal activity?</h2>
-      <input type="text" id="activity" placeholder="e.g., walk, talk, watch a movie">
+      <div id="question3" class="question-box hidden">
+        <h2>What's your ideal activity?</h2>
+        <label><input type="radio" name="activity" value="Walk"> Walk</label>
+        <label><input type="radio" name="activity" value="Talk"> Talk</label>
+        <label><input type="radio" name="activity" value="Watch a Movie"> Watch a Movie</label>
+        <label><input type="radio" name="activity" value="Play Games"> Play Games</label>
+        <label><input type="radio" name="activity" value="Have a Picnic"> Have a Picnic</label>
+        <label><input type="radio" name="activity" value="Dance"> Dance</label>
+        <button class="next-btn">Next</button>
+      </div>
 
-      <h2>What time do you prefer?</h2>
-      <input type="text" id="time" placeholder="e.g., morning, evening">
-
-      <button id="submitButton">Submit</button>
+      <div id="question4" class="question-box hidden">
+        <h2>What time do you prefer?</h2>
+        <label><input type="radio" name="time" value="Morning"> Morning</label>
+        <label><input type="radio" name="time" value="Afternoon"> Afternoon</label>
+        <label><input type="radio" name="time" value="Evening"> Evening</label>
+        <label><input type="radio" name="time" value="Night"> Night</label>
+        <button id="submitButton">Submit</button>
+      </div>
     </div>
 
     <div id="thankYou" class="hidden">
