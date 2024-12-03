@@ -1,73 +1,79 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Let's Go on a Date!</title>
-  <link rel="stylesheet" href="style.css">
+	<title>Love You</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="asset/css/style.css">
 </head>
+
 <body>
-  <div class="heart-background"></div> <!-- Animated hearts -->
-  
-  <div class="container">
-    <h1>I'm grateful for you, let's go on a date!</h1>
-    <button id="startButton">Yes! Let's Go!</button>
 
-    <div id="questions" class="hidden">
-      <div id="question1" class="question-box hidden">
-        <h2>Where would you like to go?</h2>
-        <label><input type="radio" name="location" value="Park"> Park</label>
-        <label><input type="radio" name="location" value="Movie Theater"> Movie Theater</label>
-        <label><input type="radio" name="location" value="Restaurant"> Restaurant</label>
-        <label><input type="radio" name="location" value="Beach"> Beach</label>
-        <label><input type="radio" name="location" value="Cafe"> Cafe</label>
-        <label><input type="radio" name="location" value="Museum"> Museum</label>
-        <label><input type="radio" name="location" value="Amusement Park"> Amusement Park</label>
-        <label><input type="radio" name="location" value="Zoo"> Zoo</label>
-        <label><input type="radio" name="location" value="Art Gallery"> Art Gallery</label>
-        <button class="next-btn">Next</button>
-      </div>
+<div class="wrapper">
+	<div class="container">
+		<div class="main">
+			<section id="testimonials">
+				<div class="text-container">
+					<div class="row">
+						<div class="two columns header-col">
+							<h1><span>Quotes</span></h1>
+						</div>
+						<div class="ten columns flex-container">
+							<div class="flexslider">
+								<ul class="slides">
+									<li>
+										<blockquote>
+											<p>
+												“In your light I learn how to love. In your beauty, how to make poems. You dance inside my chest where no-one sees you, but sometimes I do, and that sight becomes this art.”
+											</p>
+											<cite>Rumi</cite>
+										</blockquote>
+									</li>
+									<li>
+										<blockquote>
+											<p>
+												“He stepped down, trying not to look long at her, as if she were the sun, yet he saw her, like the sun, even without looking.”
+											</p>
+											<cite>Leo Tolstoy, Anna Karenina</cite>
+										</blockquote>
+									</li>
+									<li>
+										<blockquote>
+											<p>
+												“I have waited for this opportunity for more than half a century, to repeat to you once again my vow of eternal fidelity and everlasting love.”
+											</p>
+											<cite>Gabriel García Márquez, Love In The Time Of Cholera</cite>
+										</blockquote>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<ul class="bg-bubbles">
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+			<li><div class="heart pulse2">♥</div></li>
+		</ul>
+	</div>
+</div>
 
-      <div id="question2" class="question-box hidden">
-        <h2>What would you like to eat?</h2>
-        <label><input type="radio" name="food" value="Pizza"> Pizza</label>
-        <label><input type="radio" name="food" value="Sushi"> Sushi</label>
-        <label><input type="radio" name="food" value="Ice Cream"> Ice Cream</label>
-        <label><input type="radio" name="food" value="Burger"> Burger</label>
-        <label><input type="radio" name="food" value="Pasta"> Pasta</label>
-        <label><input type="radio" name="food" value="Salad"> Salad</label>
-        <label><input type="radio" name="food" value="Tacos"> Tacos</label>
-        <button class="next-btn">Next</button>
-      </div>
-
-      <div id="question3" class="question-box hidden">
-        <h2>What's your ideal activity?</h2>
-        <label><input type="radio" name="activity" value="Walk"> Walk</label>
-        <label><input type="radio" name="activity" value="Talk"> Talk</label>
-        <label><input type="radio" name="activity" value="Watch a Movie"> Watch a Movie</label>
-        <label><input type="radio" name="activity" value="Play Games"> Play Games</label>
-        <label><input type="radio" name="activity" value="Have a Picnic"> Have a Picnic</label>
-        <label><input type="radio" name="activity" value="Dance"> Dance</label>
-        <button class="next-btn">Next</button>
-      </div>
-
-      <div id="question4" class="question-box hidden">
-        <h2>What time do you prefer?</h2>
-        <label><input type="radio" name="time" value="Morning"> Morning</label>
-        <label><input type="radio" name="time" value="Afternoon"> Afternoon</label>
-        <label><input type="radio" name="time" value="Evening"> Evening</label>
-        <label><input type="radio" name="time" value="Night"> Night</label>
-        <button id="submitButton">Submit</button>
-      </div>
-    </div>
-
-    <div id="thankYou" class="hidden">
-      <h2>Thank you for your answers!</h2>
-      <p>Your choices:</p>
-      <ul id="summary"></ul>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+<audio controls autoplay style="display:none;">
+	<source src="asset/audio/David%20Neyrolles%20-%2050%20Boulevard%20Voltaire.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+<script>window.jQuery || document.write('<script src="asset/js/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="asset/js/jquery.flexslider.js"></script>
+<script src="asset/js/init.js"></script>
 </body>
 </html>
